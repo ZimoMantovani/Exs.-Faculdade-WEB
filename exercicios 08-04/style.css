@@ -6,8 +6,16 @@ body {
     line-height: 1.6;
   }
   
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+  }
+
   header {
-    background-color: #ffb6c1;
+    background-color: #d4c2e9;
     text-align: center;
     padding: 2rem;
   }
@@ -15,12 +23,12 @@ body {
   header h1 {
     font-size: 3rem;
     margin: 0;
-    color: #fff;
+    color: #5f2666;
   }
   
   header p {
     font-size: 1.3rem;
-    color: #fff8f8;
+    color: #7e447b;
   }
   
   section {
@@ -31,7 +39,7 @@ body {
   
   .sobre {
     background-color: #fff0f5;
-    border-left: 5px solid #ff69b4;
+    border-left: 5px solid #512288;
   }
   
   .sabores ul {
@@ -50,14 +58,45 @@ body {
   }
   
   h2 {
-    color: #d87093;
+    color: #d4c2e9;
     font-size: 2rem;
   }
   
   footer {
-    background-color: #ffb6c1;
+    background-color: #d4c2e9;
     text-align: center;
     padding: 1rem;
     color: #fff;
+  }
+
+  .sabores-lista a {
+    display: block;
+    color: #6f198a;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sabores-lista a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+  }
+  
+  .sorvete-pagina {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .sorvete-pagina h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+  }
+  
+  .voltar {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #ff69b4;
   }
   
