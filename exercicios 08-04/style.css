@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fdf3f3;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    color: #fff8f8;
+  }
+  
+  section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+  }
+  
+  .sobre {
+    background-color: #fff0f5;
+    border-left: 5px solid #ff69b4;
+  }
+  
+  .sabores ul {
+    list-style: square;
+    padding-left: 1.5rem;
+  }
+  
+  .sabores {
+    background-color: #fffaf0;
+    border-left: 5px solid #f4a460;
+  }
+  
+  .promocoes {
+    background-color: #f0fff0;
+    border-left: 5px solid #32cd32;
+  }
+  
+  h2 {
+    color: #d87093;
+    font-size: 2rem;
+  }
+  
+  footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+  }
+  
