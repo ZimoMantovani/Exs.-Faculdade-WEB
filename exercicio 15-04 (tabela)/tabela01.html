@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Cidades</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    img {
+      width: 120px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1) Tabela com Estado, Cidade, Dados e Foto</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Estado (UF)</th>
+        <th>Cidade</th>
+        <th>Dados da Cidade</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>RJ</td>
+        <td>Rio de Janeiro</td>
+        <td>Conhecida por suas praias e o Cristo Redentor.</td>
+        <td><img src="https://tirolesa.bondinho.com.br/wp-content/uploads/2023/12/header-blog-historia-do-rio-de-janeiro-tirolesa.webp" alt="Rio de Janeiro"></td>
+      </tr>
+      <tr>
+        <td>SP</td>
+        <td>São Paulo</td>
+        <td>Maior centro financeiro do Brasil.</td>
+        <td><img src="https://jpimg.com.br/uploads/2024/01/aniversario-de-sao-paulo-10-curiosidades-sobre-a-cidade-1024x683.jpg" alt="São Paulo"></td>
+      </tr>
+      <tr>
+        <td>BA</td>
+        <td>Salvador</td>
+        <td>Primeira capital do Brasil e famosa pelo carnaval.</td>
+        <td><img src="https://content.r9cdn.net/rimg/dimg/f3/ac/2ca2def3-city-26168-164fc0204f5.jpg?width=1366&height=768&xhint=2053&yhint=1198&crop=true" alt="Salvador"></td>
+      </tr>
+      <tr>
+        <td>RS</td>
+        <td>Porto Alegre</td>
+        <td>Importante centro cultural do sul do Brasil.</td>
+        <td><img src="https://curtamais.com.br/goiania/wp-content/uploads/sites/2/2025/01/AdobeStock_603396190-1140x725-1.jpg" alt="Porto Alegre"></td>
+      </tr>
+      <tr>
+        <td>AM</td>
+        <td>Manaus</td>
+        <td>Porta de entrada para a Amazônia.</td>
+        <td><img src="https://www.manaus.am.gov.br/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-22-at-18.26.52.jpeg" alt="Manaus"></td>
+      </tr>
+      <tr>
+        <td>DF</td>
+        <td>Brasília</td>
+        <td>Capital do Brasil, planejada por Lúcio Costa e Niemeyer.</td>
+        <td><img src="https://live.staticflickr.com/65535/50060212291_993759111c_b.jpg" alt="Brasília"></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Cidades</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    img {
+      width: 120px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>2) Tabela com Região agrupada</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Região</th>
+        <th>Estado (UF)</th>
+        <th>Cidade</th>
+        <th>Dados da Cidade</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- Região Sudeste -->
+        <tr>
+            <td rowspan="2">Sudeste</td>
+            <td>RJ</td>
+            <td>Rio de Janeiro</td>
+            <td>Conhecida por suas praias e o Cristo Redentor.</td>
+            <td><img src="https://tirolesa.bondinho.com.br/wp-content/uploads/2023/12/header-blog-historia-do-rio-de-janeiro-tirolesa.webp" alt="Rio de Janeiro"></td>
+        </tr>
+        <tr>
+            <td>SP</td>
+            <td>São Paulo</td>
+            <td>Maior centro financeiro do Brasil.</td>
+            <td><img src="https://jpimg.com.br/uploads/2024/01/aniversario-de-sao-paulo-10-curiosidades-sobre-a-cidade-1024x683.jpg" alt="São Paulo"></td>
+        </tr>
+        <!-- Região Nordeste -->
+        <tr>
+            <td rowspan="1">Nordeste</td>
+            <td>BA</td>
+            <td>Salvador</td>
+            <td>Primeira capital do Brasil e famosa pelo carnaval.</td>
+            <td><img src="https://content.r9cdn.net/rimg/dimg/f3/ac/2ca2def3-city-26168-164fc0204f5.jpg?width=1366&height=768&xhint=2053&yhint=1198&crop=true" alt="Salvador"></td>
+        </tr>
+        <!-- Região Sul -->
+        <tr>
+            <td rowspan="1">Sul</td>
+            <td>RS</td>
+            <td>Porto Alegre</td>
+            <td>Importante centro cultural do sul do Brasil.</td>
+            <td><img src="https://curtamais.com.br/goiania/wp-content/uploads/sites/2/2025/01/AdobeStock_603396190-1140x725-1.jpg" alt="Porto Alegre"></td>
+          </tr>
+        <!-- Região Norte -->
+        <tr>
+            <td rowspan="1">Norte</td>
+            <td>AM</td>
+            <td>Manaus</td>
+            <td>Porta de entrada para a Amazônia.</td>
+            <td><img src="https://www.manaus.am.gov.br/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-22-at-18.26.52.jpeg" alt="Manaus"></td>
+          </tr>
+        <!-- Região Centro-Oeste -->
+      <tr>
+        <td rowspan="1">Centro-Oeste</td>
+        <td>DF</td>
+        <td>Brasília</td>
+        <td>Capital do Brasil, planejada por Lúcio Costa e Niemeyer.</td>
+        <td><img src="https://live.staticflickr.com/65535/50060212291_993759111c_b.jpg" alt="Brasília"></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  

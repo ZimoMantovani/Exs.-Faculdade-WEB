@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario</h1>
+        <form action="#" autocomplete="off">
+
+            <div class="checkbox-group">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco"><br><br>
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" name="cidade"><br><br>
+                <label for="estado">Estado:</label><br>
+                <input type="text" id="estado" name="estado"><br><br>
+            </div>
+            
+            <div class="radio-group">
+                <label>Sexo</label> <br>
+                <label><input type="radio" name="sexo" id="masculino">Masculino</label> <br>
+                <label><input type="radio" name="sexo" id="feminino">Feminino</label> <br> <br>
+            </div>
+
+            <div class="radio-group">
+                <label>Estado Civil</label> <br>
+                <label><input type="radio" name="estado_civil" id="solteiro">Solteiro</label> <br>
+                <label><input type="radio" name="estado_civil" id="casado">Casado</label> <br>
+                <label><input type="radio" name="estado_civil" id="divorciado">Divorciado</label> <br>
+                <label><input type="radio" name="estado_civil" id="viuvo">Viúvo</label> <br> <br>
+            </div>
+
+            <div class="checkbox-group">
+                <label>Confirme suas escolhas</label> <br>
+                <label><input type="checkbox" name="videogame" id="videogame">Você gosta de videogame</label> <br>
+                <label><input type="checkbox" name="rede_social" id="rede_social">Você posta vídeo na rede social</label> <br>
+                <label><input type="checkbox" name="compra" id="compra">Você compra pela internet</label> <br>
+                <label><input type="checkbox" name="banco" id="banco">Você usa banco pela internet</label> <br> <br>
+            </div>
+
+            <label for="observacoes">Observacões: </label> <br>
+            <textarea name="observacoes" id="observacoes" placeholder="Escreva aqui..."></textarea>
+            <br><br>
+
+            <input class="submit-btn" type="submit" value="Enviar"><br><br>
+        </form>
+    </div>
+</body>
+</html>
