@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveWear - Roupas Esportivas</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<script>
+    // Alerta quando clicar em comprar
+    document.querySelectorAll('.btn-primary').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Produto adicionado ao carrinho!');
+        });
+    });
+</script>
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">ActiveWear</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Masculino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feminino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="produtos container mt-5">
+    <h2 class="text-center">Nossos Produtos</h2>
+    <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-4">
+            <div class="card produto">
+                <img src="/exercicio 06-05 (pronto) (esportiva)/images/kit_4_camisetas_dry_masculina_12feaef0-d01d-4037-a370-c46538b67d29.webp" class="card-img-top" alt="Camiseta Esportiva">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Esportiva</h5>
+                    <p class="card-text">R$ 89,90</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- produto 2  -->
+                <div class="col-md-4">
+            <div class="card produto">
+                <img src="/exercicio 06-05 (pronto) (esportiva)/images/61ocbklTMIL._AC_SX569_.jpg" class="card-img-top" alt="Camiseta Esportiva">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Esportiva</h5>
+                    <p class="card-text">R$ 89,90</p>
+                    <button class="btn btn-primary">Comprar</button>
+    </div>
+</section>
+
+<header class="banner">
+    <div class="container">
+        <h1>Bem-vindo à ActiveWear</h1>
+        <p>As melhores roupas para seu treino</p>
+        <button class="btn btn-primary">Ver Produtos</button>
+    </div>
+</header>
+
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <p class="text-center">© 2023 ActiveWear - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

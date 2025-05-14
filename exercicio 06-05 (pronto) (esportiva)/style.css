@@ -1,0 +1,22 @@
+/* Estilo do banner */
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Estilo dos produtos */
+.produto {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.produto:hover {
+    transform: scale(1.05);
+}
+
+/* Espaçamentos */
+body {
+    padding-top: 56px; /* Para o menu fixo */
+}
