@@ -4,8 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Processadores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">Processadores: a mente mestra do seu computador</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-4 mb-5">
+
+      <h2 class="text-center py-3 border-bottom">
+          Vamos entender melhor sobre o cérebro do seu computador <br>
+          <small class="text-body-secondary">O que são processadores e como funcionam?</small>
+      </h2>
+
+      <br>
+
+      <h3 class="mb-4">O que é um processador?</h3>
+
+      <p>
+        Um processador é uma espécie de microchip especializado, é o núcleo vital de todas as operações do seu computador. Simplificando, é a mente mestra que impulsiona todas as funcionalidades. Se já se questionou como seu computador consegue executar diversas tarefas, a resposta é o processador. Ele processa e executa instruções de software, viabilizando uma ampla gama de atividades, desde abrir navegadores até rodar aplicativos complexos. As suas funções são acelerar, endereçar, resolver ou preparar dados, dependendo da aplicação.
+      </p>
+
+      <h4 class="mb-4">Quais os principais tipos?</h4>
+
+      <p>
+        <b>CPU</b> (Unidade Central de Processamento), <b>GPU</b> (Unidade de Processamento Gráfico), <b>NPU</b> (Unidade de Processamento Neural), <b>ISP</b> (Processador de Sinal de Imagem) e <b>DSP</b> (Processador Digital de Sinal) são alguns dos principais tipos de processadores encontrados em celulares, câmeras e computadores.
+      </p>
+
+      <br>
+
+      <div class="row">
+      <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active list-group-item-danger " id="list-cpu-list" data-bs-toggle="list" href="#list-cpu" role="tab" aria-controls="list-home">CPU</a>
+        <a class="list-group-item list-group-item-action list-group-item-danger" id="list-gpu-list" data-bs-toggle="list" href="#list-gpu" role="tab" aria-controls="list-profile">GPU</a>
+        <a class="list-group-item list-group-item-action list-group-item-danger" id="list-npu-list" data-bs-toggle="list" href="#list-npu" role="tab" aria-controls="list-messages">NPU</a>
+        <a class="list-group-item list-group-item-action list-group-item-danger" id="list-isp-list" data-bs-toggle="list" href="#list-isp" role="tab" aria-controls="list-settings">ISP</a>
+        <a class="list-group-item list-group-item-action list-group-item-danger" id="list-dsp-list" data-bs-toggle="list" href="#list-dsp" role="tab" aria-controls="list-settings">DSP</a>
+    </div>
+
+    </div>
+    <div class="col-8 d-flex align-items-center" style="min-height: 100px;">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-cpu" role="tabpanel" aria-labelledby="list-cpu-list"> A <b>CPU</b> serve para executar instruções gerais de programas, funcionando como o “cérebro” do computador. Ela é dividida em três componentes principais: a Unidade Lógica Aritmética (ULA), a Unidade de Controle (UC) e os Registradores. Por ser a unidade central de processamento, é muitas vezes chamada apenas de “processador”. <b>Por exemplo:</b> ao digitar um texto no Word, a CPU interpreta suas teclas e exibe as letras na tela em tempo real. Também é ela que organiza todas as tarefas simultâneas do sistema operacional.</div>
+      <div class="tab-pane fade" id="list-gpu" role="tabpanel" aria-labelledby="list-gpu-list">A <b>GPU</b> serve para processar gráficos de forma eficiente, sendo fundamental para renderização de jogos, edição de vídeo e outras aplicações visuais. Baseia-se no processamento paralelo para executar múltiplas operações gráficas simultaneamente e pode ter centenas ou milhares de núcleos de processamento independentes. <b>Por exemplo:</b> se você joga Fortnite, edita vídeos ou assiste a filmes em 4K no YouTube, é a GPU que garante qualidade de imagem, fluidez e cores vibrantes na tela.
+      </div>
+      <div class="tab-pane fade" id="list-npu" role="tabpanel" aria-labelledby="list-npu-list">A <b>NPU</b> serve para acelerar tarefas relacionadas à inteligência artificial, como deep learning, redes neurais e visão computacional em celulares e computadores. Também chamada de Unidade de Processamento Inteligente (IPU), pode melhorar a qualidade de imagens em Smart TVs por meio de uma técnica conhecida como upscaling. <b>Por exemplo:</b> ao usar o desbloqueio facial do celular ou filtros de beleza em tempo real em fotos e vídeos, é a NPU que realiza essas tarefas com velocidade e precisão.
+      </div>
+      <div class="tab-pane fade" id="list-isp" role="tabpanel" aria-labelledby="list-isp-list">Um <b>ISP</b> serve para processar as imagens capturadas por câmeras. Trabalha em conjunto com outros processadores do SoC (System-on-a-chip), como o DSP e a CPU, para gerenciar as cores, reduzir o ruído e melhorar a nitidez das cenas fotografadas e filmadas pelo celular, notebook, câmera digital e outros eletrônicos com sensores de imagem.<b> Por exemplo:</b> quando você tira uma foto no celular e ela sai automaticamente com boa iluminação, foco ajustado e cores vivas, é o ISP que está por trás desse processamento inteligente da imagem.
+      </div>
+      <div class="tab-pane fade" id="list-dsp" role="tabpanel" aria-labelledby="list-dsp-list">Um <b>DSP</b> serve para processar sinais digitais, como áudio e vídeo, em tempo real. É útil em aplicações como codificação e decodificação de vídeos de alta resolução, cancelamento ativo de ruído (ANC) em fones de ouvido e filtros de melhoria de qualidade de imagem. <b>Por exemplo:</b> ao fazer uma chamada com fones Bluetooth com cancelamento de ruído, o DSP filtra os sons do ambiente e melhora sua voz, tornando a conversa mais clara.
+    </div>
+    </div>
+    </div>
+    </div>
+
+  <br><br>
+
+      <img src="images/processador.jpg" class="img-fluid d-block mx-auto mb-4" style="max-width: 800px;" alt="Processador">
+
+      <br><br>
+
+      <h4 class="mb-4">Como funcionam?</h4>
+
+      <p>
+        Os processadores modernos para PCs são construídos a partir de bilhões de transistores, pequenos componentes que, individualmente, realizam operações a partir de sinais elétricos, os quais são convertidos para o mundo digital na forma binária de “0” e “1”. Tudo é fabricado em uma escala nanométrica, sendo impossível observar cada uma das partes físicas a olho nu. <br>
+        O arranjo desses transistores em unidades maiores permite que operações complexas sejam realizadas em uma fração de segundo. Por isso, o processador é a unidade responsável por traduzir cada comando recebido e gerar uma resposta, seja para abrir um aplicativo, reproduzir um vídeo no YouTube ou rodar uma partida de Fortnite (algo feito com o auxílio da GPU, a placa de vídeo). <br>
+        O processador possui diversas unidades especializadas em seu interior, além de registradores (um tipo de memória extremamente rápido e caro) e outros níveis de memória próprios, como mostraremos a seguir.
+        De maneira simplificada, o processador recebe uma instrução de um app ou do sistema operacional, realiza um cálculo e emite uma resposta. O processo é dividido em três etapas, que são: Busca, Decodificação e Execução. <br>
+        Essas operações são realizadas a partir de um conjunto de instruções pré-definidas, que podem ser matemáticas, de comparação, entre outras.
+      </p>
+
+      <br>
+
+      <h4 class="mb-4">Um pouco sobre suas arquiteturas</h4>
+
+      <p>A arquitetura de um processador se refere ao projeto do chip e à forma como ele processa os dados. Há dois tipos de arquiteturas: a von Neumann, mais comum em processadores modernos, e a Harvard. </p> 
+      
+      <ul>
+        <li><b>Arquitetura von Neumann: </b> usa uma memória única para armazenar tanto os dados quanto as instruções que estiverem sendo executadas. Ela consiste em um processador que realiza os cálculos, uma unidade de controle que coordena as operações e um barramento que interliga todos os componentes.</li>
+        <li><b>Arquitetura Harvard:</b> tem memórias separadas para dados e programas, o que significa que o processador pode acessar instruções e manipular dados ao mesmo tempo. É mais usada em sistemas embarcados e pequenos microcontroladores, como os usados em eletrodomésticos, por ser mais eficiente para tarefas muito específicas.</li>
+      </ul>
+
+      <h4 class="mb-4">E em questão ao seu desempenho?</h4>
+
+      <p>Vários fatores influenciam a performance de um processador, incluindo:</p>
+
+      <br>
+
+      <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <b>Frequência (GHz)</b>
+        </button>
+        </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Quanto maior, mais rápido o processador pode ser.</p>
+      </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <b>Quantidade de núcleos</b>
+        </button>
+        </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Mais núcleos permitem multitarefas com mais eficiência.</p>
+      </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <b>Cache interno</b>
+        </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Quanto maior, mais dados o processador acessa rapidamente.</p>
+      </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <b>Tecnologia de fabricação</b>
+        </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Processos menores (ex: 5nm) são mais eficientes energeticamente.</p>
+      </div>
+      </div>
+      </div>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

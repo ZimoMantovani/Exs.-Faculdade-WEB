@@ -4,8 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">Dispositivos de Armazenamento - Memórias: RAM e ROM</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Conteúdo
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#ram">Memória RAM </a></li>
+                  <li><a class="dropdown-item" href="#rom">Memória ROM</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-4">
+
+      <h2 class="text-center py-3 border-bottom">
+           Aqui vamos falar um pouco sobre memórias <br>
+          <small class="text-body-secondary">RAM e ROM: quais suas diferenças?</small>
+      </h2>
+
+      <br>
+
+      <h3 class="mb-4">O que é uma memória?</h3>
+
+      <p>
+        A memória de um computador é um componente essencial, responsável por armazenar dados e instruções que são utilizados no processamento de informações. Ela pode se apresentar como circuitos eletrônicos (como os chips de memória RAM) ou como meios magnéticos e eletrônicos (como os discos rígidos e SSDs). Sem a memória, seria impossível executar programas, carregar o sistema operacional ou até mesmo abrir um arquivo. <br> Embora o termo "memória" seja comumente usado para se referir apenas à memória RAM, existem diferentes tipos com finalidades variadas. Além da RAM, temos a memória ROM, o disco rígido (HD), SSDs, disquetes (já obsoletos), e outras formas de armazenamento. A seguir, listamos os principais tipos de memória utilizados nos computadores:
+      </p>
+
+      <ul class="list-group">
+        <li class="list-group-item">RAM Dinâmica (DRAM)</li>
+        <li class="list-group-item">RAM Estática (SRAM)</li>
+        <li class="list-group-item">ROM</li>
+        <li class="list-group-item">EPROM</li>
+        <li class="list-group-item">Flash ROM</li>
+        <li class="list-group-item">CMOS</li>
+        <li class="list-group-item">Memória de Vídeo</li>
+        <li class="list-group-item">ROMs das placas de expansão.</li>
+      </ul>
+
+      <br>
+
+      <img src="images/memorias.png" class="img-fluid d-block mx-auto mb-4" style="max-width: 800px;" alt="Memórias ram e rom">
+
+      <br><br>
+
+      <h4 class="mb-4">Memória primária ou secundária?</h4>
+
+      <p>
+        As memórias podem ser classificadas de acordo com sua função e proximidade com o processador. A <b>memória primária</b> (ou principal) é aquela diretamente acessível pela CPU, permitindo acesso rápido e aleatório aos dados. Exemplos incluem a memória RAM, a ROM e a memória cache.
+        <br>
+        Já a <b>memória secundária</b> é utilizada para armazenar grandes volumes de dados de forma permanente ou semivolátil, mas com uma velocidade de acesso significativamente menor. Exemplos de memórias secundárias incluem o disco rígido (HD), SSDs, CDs, DVDs, e pendrives (USBs).
+      </p>
+
+      <br>
+
+      <h5 class="mb-4">Diferenças entre RAM e ROM</h5>
+
+      <h6 id="ram">Memória RAM</h6>
+
+      <p>
+        A memória <b>RAM (Random Access Memory)</b> é um tipo de memória <b>volátil</b>, ou seja, todos os dados armazenados nela são perdidos quando o computador é desligado. Ela funciona como uma área de trabalho temporária para o processador, armazenando dados e instruções que estão sendo usados no momento.
+        <br>
+        Graças à sua alta velocidade, a RAM permite que os programas rodem de maneira mais fluida e que os dados sejam acessados quase instantaneamente. Quanto mais memória RAM um computador possui, maior sua capacidade de executar múltiplas tarefas ao mesmo tempo (multitarefa) sem perda de desempenho.
+        <br>
+      </p> 
+
+      <img src="images/ram.jpg" class="img-fluid d-block mx-auto mb-4" style="max-width: 600px;" alt="Módulo de memória RAM">
+
+      <h6 id="rom">Memória ROM</h6>
+
+      <p>
+        Por outro lado, a <b>ROM (Read-Only Memory)</b> é uma memória <b>não volátil</b>, ou seja, mantém os dados mesmo após o computador ser desligado. Seu conteúdo geralmente é gravado pelo fabricante e tem como objetivo armazenar instruções essenciais para o funcionamento inicial da máquina.
+        <br>
+        Um exemplo clássico de uso da ROM é o armazenamento do BIOS (Basic Input/Output System), o primeiro programa que o computador executa ao ser ligado. O BIOS é responsável por realizar testes de inicialização e carregar o sistema operacional a partir do dispositivo correto (HD, SSD, pen drive, etc.).
+        <br>
+        Hoje em dia, existem variações da ROM, como a EPROM, EEPROM e Flash ROM, que permitem a regravação de dados, seja por meio de equipamentos especiais ou eletronicamente, facilitando atualizações de firmware e configurações da placa-mãe.
+      </p>
+
+      <img src="images/roms.jpg" class="img-fluid d-block mx-auto mb-4" style="max-width: 600px;" alt="Chips de memória ROM">
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
