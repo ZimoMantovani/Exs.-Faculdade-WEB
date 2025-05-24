@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes de Computadores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Supernova</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Conteúdo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#conceito">O que é uma Rede?</a></li>
+                  <li><a class="dropdown-item" href="#tipos">Tipos de Redes</a></li>
+                  <li><a class="dropdown-item" href="#equipamentos">Equipamentos</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-4">
+
+      <h2 class="text-center py-3 border-bottom">
+           Redes de Computadores <br>
+          <small class="text-body-secondary">Como dispositivos se conectam e se comunicam</small>
+      </h2>
+
+      <br>
+
+      <h3 id="conceito">O que é uma Rede de Computadores?</h3>
+
+      <p>
+        Uma <b>rede de computadores</b> é um conjunto de dispositivos interconectados que compartilham dados, recursos e serviços. As redes permitem a comunicação entre computadores, servidores, impressoras e outros dispositivos, seja localmente (em uma residência ou empresa) ou globalmente através da internet.
+      </p>
+
+      <br>
+
+      <h4 id="tipos">Tipos de Redes</h4>
+      <ul class="list-group mb-4">
+        <li class="list-group-item"><b>LAN</b> (Local Area Network) – Rede local</li>
+        <li class="list-group-item"><b>MAN</b> (Metropolitan Area Network) – Rede metropolitana</li>
+        <li class="list-group-item"><b>WAN</b> (Wide Area Network) – Rede de longa distância</li>
+        <li class="list-group-item"><b>WLAN</b> – Rede local sem fio</li>
+        <li class="list-group-item"><b>VPN</b> – Rede privada virtual</li>
+      </ul>
+
+      <img src="/exercicio 05-05 (bootstrap)/images/topologias-de-redes-9.webp" class="img-fluid d-block mx-auto mb-4" style="max-width: 800px;" alt="Tipos de redes">
+
+      <h4 id="equipamentos">Principais Equipamentos de Rede</h4>
+
+      <p>Para que uma rede funcione, são necessários equipamentos específicos:</p>
+      <ul class="list-group">
+        <li class="list-group-item"><b>Roteador:</b> Direciona os dados entre redes diferentes, como sua casa e a internet.</li>
+        <li class="list-group-item"><b>Switch:</b> Conecta diversos dispositivos dentro da mesma rede local (LAN).</li>
+        <li class="list-group-item"><b>Access Point (AP):</b> Permite conexões sem fio.</li>
+        <li class="list-group-item"><b>Modem:</b> Faz a comunicação entre sua rede e o provedor de internet.</li>
+        <li class="list-group-item"><b>Firewall:</b> Protege a rede contra acessos não autorizados.</li>
+      </ul>
+
+      <br>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
