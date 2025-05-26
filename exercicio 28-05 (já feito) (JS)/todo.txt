@@ -1,0 +1,24 @@
+Crie html, css e javascript conforme exemplos acima.
+
+ 
+
+Exercício 6: Calculadora de Potência
+
+Enunciado: Crie uma calculadora que eleve um número base a um expoente e mostre o resultado.
+
+Exercicio 7:  Calculadora de raiz quadrada
+
+Enunciado: Crie uma calculadora que calcule a raiz quadrada de um número.
+
+Exercício 8: Gerador de Números Aleatórios
+
+Enunciado: Crie um gerador que produza um número aleatório entre um valor mínimo e máximo.
+
+Exercício 9: Calculadora de Logaritmo
+
+Enunciado: Crie uma calculadora que calcule o logaritmo de um número em uma base específica.
+
+Exercício 10: Conversor de Graus para Radianos
+
+Enunciado: Crie um conversor que transforme graus em radianos.
+

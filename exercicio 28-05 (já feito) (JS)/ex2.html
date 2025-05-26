@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Equação do 2º Grau</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 20px;
+
+        }
+
+        .container {
+
+            max-width: 400px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+        }
+
+        input, button {
+
+            padding: 8px;
+
+            margin: 5px 0;
+
+            width: 100%;
+
+        }
+
+        button {
+
+            background-color: #4CAF50;
+
+            color: white;
+
+            border: none;
+
+            cursor: pointer;
+
+        }
+
+        #resultado {
+
+            margin-top: 10px;
+
+            font-weight: bold;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Resolver ax² + bx + c = 0</h2>
+
+        <label for="valorA">Coeficiente a:</label>
+
+        <input type="number" id="valorA" placeholder="Digite a">
+
+        <label for="valorB">Coeficiente b:</label>
+
+        <input type="number" id="valorB" placeholder="Digite b">
+
+        <label for="valorC">Coeficiente c:</label>
+
+        <input type="number" id="valorC" placeholder="Digite c">
+
+        <button onclick="calcularBhaskara()">Calcular</button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+ 
+
+    <script>
+
+        function calcularBhaskara() {
+
+            const valorA = parseFloat(document.getElementById('valorA').value);
+
+            const valorB = parseFloat(document.getElementById('valorB').value);
+
+            const valorC = parseFloat(document.getElementById('valorC').value);
+
+            const elementoResultado = document.getElementById('resultado');
+
+ 
+
+            if (valorA === 0) {
+
+                elementoResultado.textContent = "Não é uma equação quadrática (a = 0).";
+
+                return;
+
+            }
+
+ 
+
+            const delta = valorB * valorB - 4 * valorA * valorC;
+
+ 
+
+            if (delta < 0) {
+
+                elementoResultado.textContent = "Não há raízes reais (Delta < 0).";
+
+            } else if (delta === 0) {
+
+                const raizUnica = -valorB / (2 * valorA);
+
+                elementoResultado.textContent = `Raiz única: x = ${raizUnica.toFixed(2)}`;
+
+            } else {
+
+                const raiz1 = (-valorB + Math.sqrt(delta)) / (2 * valorA);
+
+                const raiz2 = (-valorB - Math.sqrt(delta)) / (2 * valorA);
+
+                elementoResultado.textContent = `Raízes: x1 = ${raiz1.toFixed(2)}, x2 = ${raiz2.toFixed(2)}`;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
