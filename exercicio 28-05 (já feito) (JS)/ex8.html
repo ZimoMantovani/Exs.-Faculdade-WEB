@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Resolver Potência</title>
+    <title>Números aleatorios</title>
 
     <style>
 
@@ -78,38 +78,22 @@
 
     <div class="container">
 
-        <h2>Resolver = a<sup>b</sup></h2>
+        <h2>Gerar número</h2>
 
-        <label for="valorA">Coeficiente a:</label>
-
-        <input type="number" id="valorA" placeholder="Digite o valor de a">
-
-        <label for="valorB">Coeficiente b:</label>
-
-        <input type="number" id="valorB" placeholder="Digite o valor de b">
-
-        <button onclick="resolverPotencia()">Resolver</button>
+        <button onclick="geraNumAleatorio()">Gerar</button>
 
         <div id="resultado"></div>
 
     </div>
 
-    <script>
+      <script>
+ 
+        function geraNumAleatorio() {
 
-        function resolverPotencia() {
-
-            const valorA = parseFloat(document.getElementById('valorA').value);
-
-            const valorB = parseFloat(document.getElementById('valorB').value);
+            const solucaoX = Math.random() * (10 - 1) + 1;
 
             const elementoResultado = document.getElementById('resultado');
-
-
-                const solucaoX = valorA ** valorB;
-
-                elementoResultado.textContent = `Solução: x = ${solucaoX.toFixed(2)}`;
-
-            
+            elementoResultado.textContent = `Número = ${solucaoX.toFixed(2)}`;
 
         }
 

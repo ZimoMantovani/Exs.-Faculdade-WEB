@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Resolver Potência</title>
+    <title>Resolver raiz</title>
 
     <style>
 
@@ -78,17 +78,13 @@
 
     <div class="container">
 
-        <h2>Resolver = a<sup>b</sup></h2>
+        <h2>Resolver &radic;a</h2>
 
         <label for="valorA">Coeficiente a:</label>
 
         <input type="number" id="valorA" placeholder="Digite o valor de a">
 
-        <label for="valorB">Coeficiente b:</label>
-
-        <input type="number" id="valorB" placeholder="Digite o valor de b">
-
-        <button onclick="resolverPotencia()">Resolver</button>
+        <button onclick="resolverRaiz()">Resolver</button>
 
         <div id="resultado"></div>
 
@@ -96,20 +92,22 @@
 
     <script>
 
-        function resolverPotencia() {
+        function resolverRaiz() {
 
             const valorA = parseFloat(document.getElementById('valorA').value);
-
-            const valorB = parseFloat(document.getElementById('valorB').value);
 
             const elementoResultado = document.getElementById('resultado');
 
 
-                const solucaoX = valorA ** valorB;
+            const solucaoX = Math.sqrt(valorA);
 
+            if (isNaN(solucaoX)) {
+                elementoResultado.textContent = "Não existe raiz quadrada de números negativos";
+                return;
+            }
+            else{
                 elementoResultado.textContent = `Solução: x = ${solucaoX.toFixed(2)}`;
-
-            
+            }
 
         }
 
