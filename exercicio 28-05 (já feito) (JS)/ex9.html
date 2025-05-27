@@ -78,21 +78,36 @@
 
     <div class="container">
 
-        <h2>Gerar número aleatório</h2>
+        <h2>Resolver = log<sub>b</sub>(a)</h2>
 
-        <button onclick="geraNumAleatorio()">Gerar</button>
+        <label for="valorA">Coeficiente a:</label>
+
+        <input type="number" id="valorA" placeholder="Digite o valor de a">
+
+        <label for="valorB">Coeficiente b:</label>
+
+        <input type="number" id="valorB" placeholder="Digite o valor de b">
+
+        <button onclick="resolverLog()">Resolver</button>
 
         <div id="resultado"></div>
 
     </div>
 
+
+
       <script>
  
-        function geraNumAleatorio() {
+        function resolverLog() {
 
-            const solucaoX = Math.random() * (10 - 1) + 1;
+            const valorA = parseFloat(document.getElementById('valorA').value);
+
+            const valorB = parseFloat(document.getElementById('valorB').value);
 
             const elementoResultado = document.getElementById('resultado');
+
+            const solucaoX = Math.log(valorA) / Math.log(valorB);
+
             elementoResultado.textContent = `Número = ${solucaoX.toFixed(2)}`;
 
         }

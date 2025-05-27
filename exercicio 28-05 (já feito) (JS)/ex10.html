@@ -78,22 +78,31 @@
 
     <div class="container">
 
-        <h2>Gerar número aleatório</h2>
+        <h2>Converter graus em radianos </h2>
 
-        <button onclick="geraNumAleatorio()">Gerar</button>
+        <label for="valorA">Valor em graus</label>
+
+        <input type="number" id="valorA" placeholder="Digite o valor">
+
+        <button onclick="converterRadianos()">Converter</button>
 
         <div id="resultado"></div>
 
     </div>
 
+
+
       <script>
  
-        function geraNumAleatorio() {
+        function converterRadianos() {
 
-            const solucaoX = Math.random() * (10 - 1) + 1;
+            const valorA = parseFloat(document.getElementById('valorA').value);
 
             const elementoResultado = document.getElementById('resultado');
-            elementoResultado.textContent = `Número = ${solucaoX.toFixed(2)}`;
+
+            const solucaoX = valorA * (Math.PI/180)
+
+            elementoResultado.textContent = `Número = ${solucaoX.toFixed(7)}`;
 
         }
 
