@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Segundo Grau</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Canvas onde o gráfico será desenhado -->
+    <canvas id="meuGraficoSegundoGrau" width="400" height="200"></canvas>
+    <script>
+        // Obtém o contexto do canvas
+        const ctx = document.getElementById('meuGraficoSegundoGrau').getContext('2d');
+
+        // Cria um novo gráfico linear para representar a função quadrática
+        const meuGraficoSegundoGrau = new Chart(ctx, {
+            type: 'line', // Tipo de gráfico
+            data: {
+                labels: [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], // Rótulos dos dados
+                datasets: [{
+                    label: 'f(x) = x²', // Rótulo do conjunto de dados
+                    data: [-100, -81, -64, -49, -36, -25, -16, -9, -4, -1, 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100], // Dados
+                    borderColor: 'rgba(75, 192, 192, 1)', // Cor da borda
+                    borderWidth: 2, // Largura da borda
+                    fill: false // Não preencher a área sob a linha
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true // Iniciar o eixo y em zero
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

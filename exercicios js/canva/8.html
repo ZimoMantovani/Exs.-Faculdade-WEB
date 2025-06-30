@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Barras Horizontais</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Canvas onde o gráfico será desenhado -->
+    <canvas id="meuGraficoBarrasHorizontais" width="400" height="200"></canvas>
+    <script>
+        // Obtém o contexto do canvas
+        const ctx = document.getElementById('meuGraficoBarrasHorizontais').getContext('2d');
+
+        // Cria um novo gráfico de barras horizontais
+        const meuGraficoBarrasHorizontais = new Chart(ctx, {
+            type: 'bar', // Tipo de gráfico
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'], // Rótulos dos dados
+                datasets: [{
+                    label: 'Vendas Mensais', // Rótulo do conjunto de dados
+                    data: [65, 59, 80, 81, 56, 55, 40], // Dados
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)', // Cor de fundo das barras
+                    borderColor: 'rgba(75, 192, 192, 1)', // Cor da borda das barras
+                    borderWidth: 1 // Largura da borda
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Eixo y como índice (barras horizontais)
+                scales: {
+                    y: {
+                        beginAtZero: true // Iniciar o eixo y em zero
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

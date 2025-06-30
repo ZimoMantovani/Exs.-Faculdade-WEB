@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Para Cima</title>
+</head>
+<body>
+    <div id="cimaDiv" style="width: 100px; height: 100px; background-color: lightblue;">Solte o clique!</div>
+    <script>
+        document.getElementById('cimaDiv').addEventListener('mouseup', function() {
+            this.style.backgroundColor = 'lightgray';
+        });
+    </script>
+</body>
+</html>

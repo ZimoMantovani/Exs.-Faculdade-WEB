@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Saindo</title>
+</head>
+<body>
+    <div id="saindoDiv" style="width: 100px; height: 100px; background-color: lightcoral;">Saia com o mouse!</div>
+    <script>
+        document.getElementById('saindoDiv').addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'lightgreen';
+        });
+    </script>
+</body>
+</html>

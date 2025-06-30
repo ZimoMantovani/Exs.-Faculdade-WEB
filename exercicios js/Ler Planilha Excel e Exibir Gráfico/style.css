@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+}
+
+.upload-section input[type="file"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.data-section, .chart-section {
+    margin-top: 30px;
+}
+
+#tableContainer {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.chart-controls {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.chart-controls label {
+    font-weight: bold;
+}
+
+.chart-controls select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#dataChart {
+    max-width: 100%;
+    margin-top: 20px;
+}

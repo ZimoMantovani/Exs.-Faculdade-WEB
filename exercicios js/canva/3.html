@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Pizza Simples</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Canvas onde o gráfico será desenhado -->
+    <canvas id="meuGraficoPizza" width="400" height="200"></canvas>
+    <script>
+        // Obtém o contexto do canvas
+        const ctx = document.getElementById('meuGraficoPizza').getContext('2d');
+
+        // Cria um novo gráfico de pizza
+        const meuGraficoPizza = new Chart(ctx, {
+            type: 'pie', // Tipo de gráfico
+            data: {
+                labels: ['A', 'B', 'C', 'D'], // Rótulos dos dados
+                datasets: [{
+                    label: 'Dados', // Rótulo do conjunto de dados
+                    data: [300, 50, 100, 70], // Dados
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ], // Cores de fundo das fatias
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ], // Cores da borda das fatias
+                    borderWidth: 1 // Largura da borda
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

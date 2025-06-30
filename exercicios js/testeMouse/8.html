@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse se posicionando</title>
+</head>
+<body>
+    <div id="entrandoDiv" style="width: 100px; height: 100px; background-color: lightgreen;">Entre com o mouse!</div>
+    <script>
+        document.getElementById('entrandoDiv').addEventListener('mouseenter', function() {
+            this.style.backgroundColor = 'lightcoral';
+        });
+    </script>
+</body>
+</html>

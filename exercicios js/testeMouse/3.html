@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Sobre</title>
+</head>
+<body>
+    <div id="sobreDiv" style="width: 100px; height: 100px; background-color: lightgreen;">Passe o mouse aqui!</div>
+    <script>
+        document.getElementById('sobreDiv').addEventListener('mouseover', function() {
+            this.style.backgroundColor = 'lightcoral';
+        });
+    </script>
+</body>
+</html>

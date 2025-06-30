@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Movendo</title>
+</head>
+<body>
+    <div id="movendoDiv" style="width: 200px; height: 200px; background-color: lightblue;">Mova o mouse aqui!</div>
+    <script>
+        document.getElementById('movendoDiv').addEventListener('mousemove', function(event) {
+            this.innerHTML = 'Posição: ' + event.clientX + ', ' + event.clientY;
+        });
+    </script>
+</body>
+</html>

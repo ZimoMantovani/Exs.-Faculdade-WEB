@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Sobre e Fora com Efeito</title>
+</head>
+<body>
+    <div id="efeitoDiv" style="width: 100px; height: 100px; background-color: lightblue; transition: background-color 0.5s;">Passe o mouse!</div>
+    <script>
+        document.getElementById('efeitoDiv').addEventListener('mouseover', function() {
+            this.style.backgroundColor = 'lightcoral';
+        });
+        document.getElementById('efeitoDiv').addEventListener('mouseout', function() {
+            this.style.backgroundColor = 'lightblue';
+        });
+    </script>
+</body>
+</html>
