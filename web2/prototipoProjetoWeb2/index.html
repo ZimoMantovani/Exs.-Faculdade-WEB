@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cinematch Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Menu de navegação simples -->
+  <nav class="main-nav">
+    <a href="#" id="nav-home">Home</a>
+    <a href="#" id="nav-about">Sobre nós</a>
+    <a href="#" id="nav-contact">Contato</a>
+  </nav>
+
+  <!-- Tela de Boas-vindas -->
+  <div id="welcome-screen" class="screen active">
+    <div class="container">
+      <h1>Cinematch</h1>
+      <p>Quer assistir algum filme mas não sabe qual? Responda a esse pequeno quiz para entendermos um pouco sobre você e te indicamos um filme.</p>
+      <input type="text" id="user-name" placeholder="Digite seu nome" />
+      <button id="start-quiz" class="btn">Vamos começar</button>
+    </div>
+  </div>
+
+  <!-- Tela do Quiz -->
+  <div id="quiz-screen" class="screen">
+    <div class="container">
+      <div id="question-number"></div>
+      <h2 id="question-text"></h2>
+      <div class="options-grid"></div>
+    </div>
+  </div>
+
+  <!-- Tela de Resultado -->
+  <div id="result-screen" class="screen">
+    <div class="container">
+      <h2>Parabéns, <span id="user-name-display"></span>!</h2>
+      <h1 class="movie-title"></h1>
+      <img src="" alt="Poster do filme" class="movie-poster" />
+      <div class="synopsis">
+        <h3>Sinopse</h3>
+        <p class="synopsis-text"></p>
+      </div>
+      <button id="restart-quiz" class="btn secondary">Refazer o quiz</button>
+    </div>
+  </div>
+
+  <!-- Página Sobre nós -->
+  <div id="about-screen" class="screen">
+    <div class="container">
+      <h1>Sobre nós</h1>
+      <p>Estudantes de engenharia da computação, IFSP, campus piracicaba</p>
+      <p>O projeto é totalmente acadêmico, feito por Symon, Felipe e Natalia</p>
+    </div>
+  </div>
+
+  <!-- Página Contato (Não funciona ainda)--> 
+  <div id="contact-screen" class="screen">
+    <div class="container">
+      <h1>Contato</h1>
+      <p>Fale com a gente:</p>
+      <ul>
+        <li>Email: contato@cinematch.com</li>
+        <li>Instagram: @cinematch_oficial</li>
+      </ul>
+      <form id="contact-form" onsubmit="return false;">
+        <input type="text" id="contact-name" placeholder="Seu nome" required>
+        <input type="email" id="contact-email" placeholder="Seu email" required>
+        <textarea id="contact-msg" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h4>Cinematch &copy; 2025</h4>
+      <p>Projeto universitário – apenas para fins didáticos.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
